@@ -36,3 +36,4 @@ get_bundle tpope vim-speeddating
 get_bundle tpope vim-surround
 get_bundle tpope vim-unimpaired
 get_bundle vim-ruby vim-ruby
+get_bundle wincent Command-T
