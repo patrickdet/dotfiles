@@ -47,7 +47,7 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
-let mapleader = "_"
+" let mapleader = "_"             " Commented out after switch to U.S. layout
 
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
