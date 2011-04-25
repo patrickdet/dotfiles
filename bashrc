@@ -24,7 +24,7 @@ alias vim='mvim'
 
 
 # Editor
-export EDITOR="mvim"
+export EDITOR="mvim -f"
 
 # Path
 export PATH="$PATH:$HOME/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin"
@@ -32,6 +32,8 @@ export PATH="$PATH:$HOME/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin"
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
+# Editor
+export TERM=xterm
 
 # Colors
 # misc
