@@ -9,6 +9,7 @@ alias m='mate'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias ..='cd ..'
 
 function take() { 
     mkdir -p "$1"
