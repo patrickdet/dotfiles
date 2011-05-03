@@ -23,6 +23,8 @@ alias gcm='git commit -m'
 # MacVim instead of vim
 alias vim='mvim'
 
+# Support for the z command
+source `brew --prefix`/etc/profile.d/z.sh
 
 # Editor
 export EDITOR="mvim -f"
