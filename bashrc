@@ -37,6 +37,7 @@ export PATH="$PATH:$HOME/.gem/ruby/1.8/bin:/usr/local/bin:/usr/local/sbin"
 export TERM=xterm
 
 # Colors
+export CLICOLOR=1
 # misc
 NO_COLOR='\e[0m' #disable any colors
 # regular colors
