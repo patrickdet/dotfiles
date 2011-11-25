@@ -1,6 +1,6 @@
 # Utilities
 alias reload='source ~/.bashrc'
-alias ebrc='mvim ~/.bashrc && reload' # Edit aliases
+alias ebrc='vim ~/.bashrc && reload' # Edit aliases
 
 # Common
 alias ls='ls -lh'
@@ -28,7 +28,7 @@ alias gcm='git commit -m'
 source `brew --prefix`/etc/profile.d/z.sh
 
 # Editor
-export EDITOR="mvim -f"
+export EDITOR="vim -f"
 
 # Path
 export PATH="/usr/local/bin:$PATH:$HOME/.gem/ruby/1.8/bin:/usr/local/sbin:/usr/local/share/npm/bin"
