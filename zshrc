@@ -35,7 +35,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# Z
 . `brew --prefix`/etc/profile.d/z.sh
 function precmd () {
   z --add "$(pwd -P)"
 }
+
+# Editor
+export EDITOR="vim"
