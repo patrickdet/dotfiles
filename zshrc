@@ -43,3 +43,8 @@ function precmd () {
 
 # Editor
 export EDITOR="vim"
+
+# Colors
+autoload -U colors
+colors
+setopt prompt_subst
