@@ -1,3 +1,6 @@
 " Colorscheme
 set t_Co=256
 colorscheme molokai
+
+" Wrap lines if line too long
+set wrap
