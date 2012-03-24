@@ -55,5 +55,8 @@ eval "$(rbenv init -)"
 # Path
 PATH=$HOME/bin:$PATH
 
+# Term setting for tmux
+TERM=screen-256color
+
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
