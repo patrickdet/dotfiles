@@ -29,17 +29,17 @@ alias zshconfig="vim ~/.zshrc"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew gem bundler rails rails3 rbenv)
+plugins=(git gem bundler rails rails3 rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 # Z
-. `brew --prefix`/etc/profile.d/z.sh
-function precmd () {
-  z --add "$(pwd -P)"
-}
+#. `brew --prefix`/etc/profile.d/z.sh
+#function precmd () {
+#  z --add "$(pwd -P)"
+#}
 
 # Editor
 export EDITOR="vim"
@@ -48,6 +48,15 @@ export EDITOR="vim"
 autoload -U colors
 colors
 setopt prompt_subst
+
+# rbenv
+eval "$(rbenv init -)"
+
+# Path
+PATH=$HOME/bin:$PATH
+
+# Term setting for tmux
+TERM=screen-256color
 
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator

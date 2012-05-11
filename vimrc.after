@@ -4,3 +4,12 @@ colorscheme molokai
 
 " Wrap lines if line too long
 set wrap
+
+" JFlex plugin
+augroup filetype
+  au BufRead,BufNewFile *.flex,*.jflex    set filetype=jflex
+augroup END
+au Syntax jflex    so ~/.janus/jflex.vim
+
+" NGINX
+au BufRead,BufNewFile *nginx* set filetype=nginx

@@ -2,7 +2,7 @@ task :default => [:link_dotfiles,:copy_colors]
 
 desc "link dotfiles to home_dir"
 task :link_dotfiles do
-  %w[ gitconfig vimrc.after gvimrc.after gitignore bashrc bash_profile zshrc ].each do |file|
+  %w[ gitconfig vimrc.after gvimrc.after gitignore bashrc bash_profile zshrc tmux.conf ].each do |file|
     dest = File.expand_path("~/.#{file}")
     unless File.exist?(dest)
       ln_s(File.expand_path("../#{file}", __FILE__), dest)
