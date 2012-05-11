@@ -48,3 +48,6 @@ export EDITOR="vim"
 autoload -U colors
 colors
 setopt prompt_subst
+
+# Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
