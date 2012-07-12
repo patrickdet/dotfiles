@@ -4,3 +4,5 @@ set encoding=utf-8                " Use UTF-8 everywhere.
 set guioptions-=T                 " Hide toolbar.
 set lines=100 columns=130         " Window dimensions.
 set guioptions-=r                 " Don't show right scrollbar
+set cursorline                    " Highlight the current line of the cursor
+set colorcolumn=81                "to help us keep our lines under 80 chars
