@@ -53,7 +53,7 @@ setopt prompt_subst
 eval "$(rbenv init -)"
 
 # Path
-PATH=$HOME/bin:$PATH
+PATH=/usr/local/bin:$HOME/bin:$PATH
 
 # Term setting for tmux
 TERM=screen-256color
