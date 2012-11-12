@@ -1,6 +1,12 @@
 " Colorscheme
-set t_Co=256
-colorscheme molokai
+" for molokai
+"set t_Co=256
+"colorscheme molokai
+" for base16
+set background=dark
+colorscheme base16-default
+" end of colorscheme
+
 set cursorline                    " Highlight the current line of the cursor
 set colorcolumn=81                " to help us keep our lines under 80 chars
 
