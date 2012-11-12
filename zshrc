@@ -42,7 +42,8 @@ function precmd () {
 }
 
 # Editor
-export EDITOR="vim"
+export EDITOR="mvim -f"
+export VISUAL='mvim -f' # http://stackoverflow.com/questions/2056137/how-to-run-mvim-macvim-from-terminal
 
 # Colors
 autoload -U colors
@@ -54,6 +55,9 @@ eval "$(rbenv init -)"
 
 # Path
 PATH=/usr/local/bin:$HOME/bin:$PATH
+
+# add Python dir to PATH
+PATH=$PATH:$HOME/Library/Python/2.7/bin
 
 # Term setting for tmux
 TERM=screen-256color
